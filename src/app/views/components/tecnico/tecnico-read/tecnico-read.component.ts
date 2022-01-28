@@ -19,13 +19,13 @@ export class TecnicoReadComponent implements AfterViewInit {
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
-  constructor(private service: TecnicoService, private router: Router) {}
+  constructor(private service: TecnicoService, private router: Router) { }
 
   ngAfterViewInit() {
     this.findAll();
   }
 
-  findAll():void {
+  findAll(): void {
     this.service.findAll().subscribe((resposta) => {
       this.tecnicos = resposta;
       this.dataSource = new MatTableDataSource<Tecnico>(this.tecnicos);
@@ -33,7 +33,7 @@ export class TecnicoReadComponent implements AfterViewInit {
     })
   }
 
-  navigateToCreate():void {
+  navigateToCreate(): void {
     this.router.navigate(['tecnicos/create']);
   }
 }
