@@ -19,6 +19,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { TecnicoCreateComponent } from './views/components/tecnico/tecnico-create/tecnico-create.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    TecnicoReadComponent
+    TecnicoReadComponent,
+    TecnicoCreateComponent
   ],
   imports: [
     BrowserModule,
