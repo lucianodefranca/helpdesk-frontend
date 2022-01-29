@@ -29,9 +29,14 @@ export class TecnicoService {
     return this.http.put<Tecnico>(url, tecnico);
   }
 
-  findById(id : any):Observable<Tecnico> {
+  delete(id: any): Observable<void> {
     const url = `${this.baseUrl}/tecnicos/${id}`;
-    return this.http.get<Tecnico>(url); 
+    return this.http.delete<void>(url);
+  }
+
+  findById(id: any): Observable<Tecnico> {
+    const url = `${this.baseUrl}/tecnicos/${id}`;
+    return this.http.get<Tecnico>(url);
   }
 
   message(msg: string): void {
