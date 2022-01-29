@@ -26,3 +26,8 @@ table {
 #edit {
     color: rgb(5, 127, 158);
 }
+
+#delete {
+    color: rgb(196, 90, 90);
+    margin-left: .5rem;
+}

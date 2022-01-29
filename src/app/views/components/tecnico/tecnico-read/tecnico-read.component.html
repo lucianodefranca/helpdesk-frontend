@@ -36,6 +36,9 @@
                 <a routerLink="update/{{ element.id }}">
                     <i id="edit" class="material-icons">edit</i>
                 </a>
+                <a routerLink="delete/{{ element.id }}">
+                    <i id="delete" class="material-icons">delete</i>
+                </a>
             </td>
         </ng-container>
 
@@ -43,6 +46,6 @@
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
 
-    <mat-paginator [pageSizeOptions]="[1, 5, 10, 20]" showFirstLastButtons aria-label="Select page of periodic elements">
+    <mat-paginator [pageSizeOptions]="[ 5, 10, 20]" showFirstLastButtons aria-label="Select page of periodic elements">
     </mat-paginator>
 </div>
