@@ -22,3 +22,7 @@
 table {
     width: 100%;
 }
+
+#edit {
+    color: rgb(5, 127, 158);
+}
