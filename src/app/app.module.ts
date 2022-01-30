@@ -26,6 +26,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { TecnicoUpdateComponent } from './views/components/tecnico/tecnico-update/tecnico-update.component';
 import { TecnicoDeleteComponent } from './views/components/tecnico/tecnico-delete/tecnico-delete.component';
+import { ClienteReadComponent } from './views/components/cliente/cliente-read/cliente-read.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { TecnicoDeleteComponent } from './views/components/tecnico/tecnico-delet
     TecnicoReadComponent,
     TecnicoCreateComponent,
     TecnicoUpdateComponent,
-    TecnicoDeleteComponent
+    TecnicoDeleteComponent,
+    ClienteReadComponent
   ],
   imports: [
     BrowserModule,
