@@ -21,7 +21,6 @@ export class TecnicoService {
   create(tecnico: Tecnico): Observable<Tecnico> {
     const url = `${this.baseUrl}/tecnicos`;
     return this.http.post<Tecnico>(url, tecnico);
-    console.log(tecnico);
   }
 
   update(tecnico: Tecnico): Observable<Tecnico> {
