@@ -62,7 +62,7 @@ export class TecnicoCreateComponent implements OnInit {
 
   errorValidPhone() {
     if (this.telefone.invalid) {
-      return 'O telefone deve ter entre 11 e 18 caracteres!'
+      return 'O TELEFONE deve ter entre 11 e 18 caracteres!'
     }
     return false;
   }

@@ -2,6 +2,7 @@ import { Cliente } from "./../../../../models/cliente";
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { ClienteService } from "src/app/services/cliente.service";
+import { FormControl, Validators } from "@angular/forms";
 
 @Component({
   selector: "app-cliente-create",
@@ -16,6 +17,10 @@ export class ClienteCreateComponent implements OnInit {
     cpf: "",
     telefone: "",
   };
+
+  nome = new FormControl('', [Validators.minLength(5)]);
+  cpf = new FormControl('', [Validators.minLength(11)]);
+  telefone = new FormControl('', [Validators.minLength(11)]);
 
   constructor(private router: Router, private service: ClienteService) {}
 
@@ -37,6 +42,27 @@ export class ClienteCreateComponent implements OnInit {
         this.service.message('CPF inválido!');
       }
     })
+  }
+
+  errorValidName() {
+    if (this.nome.invalid) {
+      return 'O NOME deve ter entre 5 e 100 caracteres!';
+    }
+    return false;
+  }
+
+  errorValidCpf() {
+    if (this.cpf.invalid) {
+      return 'O CPF deve ter entre 5 e 100 caracteres!';
+    }
+    return false;
+  }
+
+  errorValidPhone() {
+    if (this.telefone.invalid) {
+      return 'O TELEFONE deve ter entre 5 e 100 caracteres!';
+    }
+    return false;
   }
 
 }
