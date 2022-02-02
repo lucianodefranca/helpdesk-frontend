@@ -12,6 +12,13 @@ import { NavComponent } from './views/components/template/nav/nav.component';
 import { HomeComponent } from './views/components/home/home.component';
 import { TecnicoReadComponent } from './views/components/tecnico/tecnico-read/tecnico-read.component';
 import { TecnicoCreateComponent } from './views/components/tecnico/tecnico-create/tecnico-create.component';
+import { TecnicoUpdateComponent } from './views/components/tecnico/tecnico-update/tecnico-update.component';
+import { TecnicoDeleteComponent } from './views/components/tecnico/tecnico-delete/tecnico-delete.component';
+import { ClienteReadComponent } from './views/components/cliente/cliente-read/cliente-read.component';
+import { ClienteCreateComponent } from './views/components/cliente/cliente-create/cliente-create.component';
+import { ClienteUpdateComponent } from './views/components/cliente/cliente-update/cliente-update.component';
+import { ClienteDeleteComponent } from './views/components/cliente/cliente-delete/cliente-delete.component';
+import { ChamadoReadComponent } from './views/components/chamado/chamado-read/chamado-read.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -24,13 +31,6 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
-import { TecnicoUpdateComponent } from './views/components/tecnico/tecnico-update/tecnico-update.component';
-import { TecnicoDeleteComponent } from './views/components/tecnico/tecnico-delete/tecnico-delete.component';
-import { ClienteReadComponent } from './views/components/cliente/cliente-read/cliente-read.component';
-import { ClienteCreateComponent } from './views/components/cliente/cliente-create/cliente-create.component';
-import { ClienteUpdateComponent } from './views/components/cliente/cliente-update/cliente-update.component';
-import { ClienteDeleteComponent } from './views/components/cliente/cliente-delete/cliente-delete.component';
-
 
 @NgModule({
   declarations: [
@@ -46,7 +46,8 @@ import { ClienteDeleteComponent } from './views/components/cliente/cliente-delet
     ClienteReadComponent,
     ClienteCreateComponent,
     ClienteUpdateComponent,
-    ClienteDeleteComponent
+    ClienteDeleteComponent,
+    ChamadoReadComponent,
   ],
   imports: [
     BrowserModule,
