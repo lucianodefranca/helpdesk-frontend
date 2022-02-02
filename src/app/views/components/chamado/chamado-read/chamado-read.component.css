@@ -31,3 +31,15 @@ table {
     color: rgb(196, 90, 90);
     margin-left: .5rem;
 }
+
+td.baixa {
+    color: rgb(14, 235, 14);
+}
+
+td.media {
+    color: rgb(238, 238, 17);
+}
+
+td.alta {
+    color: rgb(240, 13, 13);
+}
