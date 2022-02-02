@@ -19,6 +19,7 @@ import { ClienteCreateComponent } from './views/components/cliente/cliente-creat
 import { ClienteUpdateComponent } from './views/components/cliente/cliente-update/cliente-update.component';
 import { ClienteDeleteComponent } from './views/components/cliente/cliente-delete/cliente-delete.component';
 import { ChamadoReadComponent } from './views/components/chamado/chamado-read/chamado-read.component';
+import { ChamadoCreateComponent } from './views/components/chamado/chamado-create/chamado-create.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -31,6 +32,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatSelectModule} from '@angular/material/select';
+
 
 @NgModule({
   declarations: [
@@ -48,6 +51,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     ClienteUpdateComponent,
     ClienteDeleteComponent,
     ChamadoReadComponent,
+    ChamadoCreateComponent,
   ],
   imports: [
     BrowserModule,
@@ -65,7 +69,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MatInputModule,
     MatSnackBarModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
