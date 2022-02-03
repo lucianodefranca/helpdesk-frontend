@@ -34,6 +34,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatSelectModule} from '@angular/material/select';
 import { ChamadoUpdateComponent } from './views/components/chamado/chamado-update/chamado-update.component';
+import { ChamadoViewComponent } from './views/components/chamado/chamado-view/chamado-view.component';
 
 
 @NgModule({
@@ -54,6 +55,7 @@ import { ChamadoUpdateComponent } from './views/components/chamado/chamado-updat
     ChamadoReadComponent,
     ChamadoCreateComponent,
     ChamadoUpdateComponent,
+    ChamadoViewComponent,
   ],
   imports: [
     BrowserModule,

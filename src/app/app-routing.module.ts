@@ -1,3 +1,4 @@
+import { ChamadoViewComponent } from './views/components/chamado/chamado-view/chamado-view.component';
 import { ChamadoUpdateComponent } from './views/components/chamado/chamado-update/chamado-update.component';
 import { ChamadoCreateComponent } from './views/components/chamado/chamado-create/chamado-create.component';
 import { ChamadoReadComponent } from './views/components/chamado/chamado-read/chamado-read.component';
@@ -61,6 +62,10 @@ const routes: Routes = [
   {
     path: 'chamados/update/:id',
     component: ChamadoUpdateComponent
+  },
+  {
+    path: 'chamados/view/:id',
+    component: ChamadoViewComponent
   }
 ];
 
