@@ -24,7 +24,7 @@ export class ChamadoService {
   }
 
   update(chamado: Chamado): Observable<Chamado> {
-    const url = `${this.baseUrl}/chamados/${chamado.id}`;
+    const url = `${this.baseUrl}/chamados`;
     return this.http.put<Chamado>(url, chamado);
   }
 

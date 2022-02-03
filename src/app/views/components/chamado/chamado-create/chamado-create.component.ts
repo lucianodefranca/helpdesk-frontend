@@ -55,4 +55,8 @@ export class ChamadoCreateComponent implements OnInit {
       this.clientes = resposta;
     })
   }
+
+  cancel(): void {
+    this.router.navigate(['chamados']);
+  }
 }

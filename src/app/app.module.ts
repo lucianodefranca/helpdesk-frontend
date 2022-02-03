@@ -33,6 +33,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatSelectModule} from '@angular/material/select';
+import { ChamadoUpdateComponent } from './views/components/chamado/chamado-update/chamado-update.component';
 
 
 @NgModule({
@@ -52,6 +53,7 @@ import {MatSelectModule} from '@angular/material/select';
     ClienteDeleteComponent,
     ChamadoReadComponent,
     ChamadoCreateComponent,
+    ChamadoUpdateComponent,
   ],
   imports: [
     BrowserModule,
