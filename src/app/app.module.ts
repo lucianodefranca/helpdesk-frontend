@@ -20,6 +20,9 @@ import { ClienteUpdateComponent } from './views/components/cliente/cliente-updat
 import { ClienteDeleteComponent } from './views/components/cliente/cliente-delete/cliente-delete.component';
 import { ChamadoReadComponent } from './views/components/chamado/chamado-read/chamado-read.component';
 import { ChamadoCreateComponent } from './views/components/chamado/chamado-create/chamado-create.component';
+import { ChamadoUpdateComponent } from './views/components/chamado/chamado-update/chamado-update.component';
+import { ChamadoViewComponent } from './views/components/chamado/chamado-view/chamado-view.component';
+
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -33,8 +36,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatSelectModule} from '@angular/material/select';
-import { ChamadoUpdateComponent } from './views/components/chamado/chamado-update/chamado-update.component';
-import { ChamadoViewComponent } from './views/components/chamado/chamado-view/chamado-view.component';
+import {MatMenuModule} from '@angular/material/menu';
+import { ChamadoClosedComponent } from './views/components/chamado/chamado-closed/chamado-closed.component';
 
 
 @NgModule({
@@ -56,6 +59,7 @@ import { ChamadoViewComponent } from './views/components/chamado/chamado-view/ch
     ChamadoCreateComponent,
     ChamadoUpdateComponent,
     ChamadoViewComponent,
+    ChamadoClosedComponent,
   ],
   imports: [
     BrowserModule,
@@ -74,7 +78,8 @@ import { ChamadoViewComponent } from './views/components/chamado/chamado-view/ch
     MatSnackBarModule,
     FormsModule,
     ReactiveFormsModule,
-    MatSelectModule
+    MatSelectModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

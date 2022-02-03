@@ -1,3 +1,4 @@
+import { ChamadoClosedComponent } from './views/components/chamado/chamado-closed/chamado-closed.component';
 import { ChamadoViewComponent } from './views/components/chamado/chamado-view/chamado-view.component';
 import { ChamadoUpdateComponent } from './views/components/chamado/chamado-update/chamado-update.component';
 import { ChamadoCreateComponent } from './views/components/chamado/chamado-create/chamado-create.component';
@@ -54,6 +55,10 @@ const routes: Routes = [
   {
     path: 'chamados',
     component: ChamadoReadComponent
+  },
+  {
+    path: 'chamados/closed',
+    component: ChamadoClosedComponent
   },
   {
     path: 'chamados/create',

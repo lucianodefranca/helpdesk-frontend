@@ -1,19 +1,18 @@
 import { ClienteService } from './../../../../services/cliente.service';
+import { TecnicoService } from './../../../../services/tecnico.service';
+import { Router } from '@angular/router';
 import { ChamadoService } from './../../../../services/chamado.service';
-import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { Chamado } from 'src/app/models/chamado';
-import { Router } from '@angular/router';
-import { TecnicoService } from 'src/app/services/tecnico.service';
 
 @Component({
-  selector: 'app-chamado-read',
-  templateUrl: './chamado-read.component.html',
-  styleUrls: ['./chamado-read.component.css']
+  selector: 'app-chamado-closed',
+  templateUrl: './chamado-closed.component.html',
+  styleUrls: ['./chamado-closed.component.css']
 })
-
-export class ChamadoReadComponent implements AfterViewInit {
+export class ChamadoClosedComponent implements AfterViewInit {
 
   chamados: Chamado[] = [];
 
@@ -37,7 +36,7 @@ export class ChamadoReadComponent implements AfterViewInit {
     this.service.findAll().subscribe((resposta) => {
       
       resposta.forEach(obj => {
-        if (obj.status != "ENCERRADO") {
+        if (obj.status == "ENCERRADO") {
           this.chamados.push(obj);
         }
       })
@@ -47,10 +46,6 @@ export class ChamadoReadComponent implements AfterViewInit {
       this.dataSource = new MatTableDataSource<Chamado>(this.chamados);
       this.dataSource.paginator = this.paginator;
     })
-  }
-
-  navigateToCreate(): void {
-    this.router.navigate(['chamados/create']);
   }
 
   listTecnico(): void {
